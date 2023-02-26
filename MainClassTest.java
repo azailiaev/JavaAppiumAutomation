@@ -3,16 +3,16 @@ import org.junit.Test;
 
 public class MainClassTest extends MainClass {
     @Test
-    public void testGetLocalNumber(){
-        if(getLocalNumber() == 14) {
+    public void testGetClassNumber(){
+        if(getClassNumber() > 45) {
             System.out.println("Status: passed " +
-                    "\n Expected: 'getLocalNumber' = 14" +
-                    "\n Actual: 'getLocalNumber' = 14");
+                    "\n Expected: 'getClassNumber' > 45" +
+                    "\n Actual: 'getClassNumber' = " + getClassNumber());
         } else {
             Assert.assertFalse("\n Status: failed " +
-                    "\n Expected: 'getLocalNumber' = 14" +
-                    "\n Actual: 'getLocalNumber' = " + getLocalNumber(),
-                    getLocalNumber() != 14);
+                            "\n Expected: 'getClassNumber' > 45" +
+                            "\n Actual: 'getClassNumber' = " + getClassNumber(),
+                    getClassNumber() <= 45);
         }
     }
 }
