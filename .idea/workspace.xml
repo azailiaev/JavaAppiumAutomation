@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b55ccfe0-5036-4c86-b269-005071465377" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/mobile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mobile.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mobile/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mobile/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mobile/MainClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mobile/MainClassTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +59,18 @@
     "settings.editor.selected.configurable": "configurable.group.build"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="MainClassTest.testGetLocalNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MainClassTest.testGetClassNumber">
+    <configuration name="MainClassTest.testGetClassNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mobile" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainClassTest" />
+      <option name="METHOD_NAME" value="testGetClassNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClassTest.testGetLocalNumber" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="mobile" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainClassTest" />
@@ -69,7 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainClassTest.testGetLocalNumber" />
+        <item itemvalue="JUnit.MainClassTest.testGetClassNumber" />
       </list>
     </recent_temporary>
   </component>
