@@ -3,16 +3,15 @@ import org.junit.Test;
 
 public class MainClassTest extends MainClass {
     @Test
-    public void testGetClassNumber(){
-        if(getClassNumber() > 45) {
-            System.out.println("Status: passed " +
-                    "\n Expected: 'getClassNumber' > 45" +
-                    "\n Actual: 'getClassNumber' = " + getClassNumber());
+    public void testGetClassString(){
+        String substr1 = "hello";
+        String substr2 = "Hello";
+        if(getClassString().contains(substr1)) {
+            System.out.println("String contains 'hello'");
+        } else if (getClassString().contains(substr2)){
+            System.out.println("String contains 'Hello'");
         } else {
-            Assert.assertFalse("\n Status: failed " +
-                            "\n Expected: 'getClassNumber' > 45" +
-                            "\n Actual: 'getClassNumber' = " + getClassNumber(),
-                    getClassNumber() <= 45);
+            Assert.fail("\nThere is neither 'hello' nor 'Hello' in the string");
         }
     }
 }
