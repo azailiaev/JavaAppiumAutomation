@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b55ccfe0-5036-4c86-b269-005071465377" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainClassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mobile/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mobile/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mobile/MainClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mobile/MainClassTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="bd64912d-8680-415f-8521-62f6ec856627" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,68 +17,30 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/MainClass.java" root0="SKIP_INSPECTION" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
-  <component name="ProjectId" id="2MHg3Ri2bsmX5vgxEcAny1NAegf" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2MbuzX8ItSBSFpTwDRjAZfmUzhG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/zaily/OneDrive/Документы/GitHub/mobile",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.build"
+    "last_opened_file_path": "C:/Users/zaily/OneDrive/Рабочий стол/JavaAppiumAutomation/JavaAppiumAutomation/libs/selenium-server-standalone-3.4.0.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MainClassTest.testGetClassString">
-    <configuration name="MainClassTest.testGetClassNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mobile" />
+  <component name="RunManager">
+    <configuration name="FirstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainClassTest" />
-      <option name="METHOD_NAME" value="testGetClassNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainClassTest.testGetClassString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mobile" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainClassTest" />
-      <option name="METHOD_NAME" value="testGetClassString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainClassTest.testGetLocalNumber" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="mobile" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainClassTest" />
-      <option name="METHOD_NAME" value="testGetLocalNumber" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="firstTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,19 +48,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainClassTest.testGetClassString" />
-        <item itemvalue="JUnit.MainClassTest.testGetClassNumber" />
+        <item itemvalue="JUnit.FirstTest.firstTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b55ccfe0-5036-4c86-b269-005071465377" name="Changes" comment="" />
-      <created>1677429722307</created>
+      <changelist id="bd64912d-8680-415f-8521-62f6ec856627" name="Changes" comment="" />
+      <created>1678048870855</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677429722307</updated>
+      <updated>1678048870855</updated>
     </task>
     <servers />
   </component>
