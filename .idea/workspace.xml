@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd64912d-8680-415f-8521-62f6ec856627" name="Changes" comment="" />
+    <list default="true" id="bd64912d-8680-415f-8521-62f6ec856627" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork3.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,49 +48,52 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HomeWork3.testSearchWordCheck">
-    <configuration name="TnT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TnT" />
-      <module name="JavaAppiumAutomation" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeWork2.testCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FirstTest.testCheckArticleInBackground">
+    <configuration name="FirstTest.saveArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomeWork2" />
-      <option name="METHOD_NAME" value="testCancelSearch" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="saveArticle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeWork3.testCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testAmountOfEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomeWork3" />
-      <option name="METHOD_NAME" value="testCancelSearch" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testAmountOfEmptySearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeWork3.testSearchWordCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomeWork3" />
-      <option name="METHOD_NAME" value="testSearchWordCheck" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeWork.testSearchFieldHasText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testChangeScreenOrientation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomeWork" />
-      <option name="METHOD_NAME" value="testSearchFieldHasText" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testChangeScreenOrientation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.testCheckArticleInBackground" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testCheckArticleInBackground" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HomeWork3.testSearchWordCheck" />
-        <item itemvalue="JUnit.HomeWork3.testCancelSearch" />
-        <item itemvalue="Application.TnT" />
-        <item itemvalue="JUnit.HomeWork2.testCancelSearch" />
-        <item itemvalue="JUnit.HomeWork.testSearchFieldHasText" />
+        <item itemvalue="JUnit.FirstTest.testCheckArticleInBackground" />
+        <item itemvalue="JUnit.FirstTest.saveArticle" />
+        <item itemvalue="JUnit.FirstTest.testChangeScreenOrientation" />
+        <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
+        <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -115,14 +124,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/HomeWork2.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/HomeWork2.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/FirstTest.java</url>
+          <line>355</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
