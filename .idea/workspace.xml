@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd64912d-8680-415f-8521-62f6ec856627" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Ex5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork3.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,17 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.FirstTest.testCheckArticleInBackground">
+  <component name="RunManager" selected="JUnit.Ex5.saveArticle">
+    <configuration name="Ex5.saveArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Ex5" />
+      <option name="METHOD_NAME" value="saveArticle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FirstTest.saveArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -64,16 +71,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
       <option name="METHOD_NAME" value="testAmountOfEmptySearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Ex5.saveArticle" />
         <item itemvalue="JUnit.FirstTest.testCheckArticleInBackground" />
         <item itemvalue="JUnit.FirstTest.saveArticle" />
         <item itemvalue="JUnit.FirstTest.testChangeScreenOrientation" />
         <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
-        <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
       </list>
     </recent_temporary>
   </component>
