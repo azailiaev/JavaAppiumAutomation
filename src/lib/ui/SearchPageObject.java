@@ -51,6 +51,11 @@ public class SearchPageObject extends MainPageObject{
         this.waitForElementAndClick(By.className(SEARCH_CANCEL_BUTTON), "Cannot find and click search cancel button", 5);
     }
 
+    public void clearSearchField()
+    {
+        this.waitForElementAndClear(By.id(SEARCH_INPUT), "Cannot clear search field", 5);
+    }
+
     public void typeSearchLine(String serch_line)
     {
         this.waitForElementAndSendKeys(By.id(SEARCH_INPUT), serch_line, "Cannot find and type into search input", 5);

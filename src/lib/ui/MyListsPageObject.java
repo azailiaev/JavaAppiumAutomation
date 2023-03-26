@@ -7,7 +7,8 @@ public class MyListsPageObject extends MainPageObject {
 
     public static final String
             FOLDER_BY_NAME_TPL = "//*[@text='{FOLDER_NAME}']",
-            ARTICLE_BY_TITLE_TPL = "//*[@text='{TITLE}']";
+            ARTICLE_BY_TITLE_TPL = "//*[@text='{TITLE}']",
+            SAVED_ARTICLE = "//*[contains(@text,'Java (software platform)')]";
 
     private static String getFolderXpathByName(String name_of_folder) {
         return FOLDER_BY_NAME_TPL.replace("{FOLDER_NAME}", name_of_folder);
@@ -51,6 +52,15 @@ public class MyListsPageObject extends MainPageObject {
                 "Cannot swipe"
         );
         this.waitForArticleToDisappearByTitle(article_title);
+    }
+
+    public void chooseArticleFromSavedList()
+    {
+        this.waitForElementAndClick(
+                By.xpath(SAVED_ARTICLE),
+                "Cannot find Save",
+                5
+        );
     }
 }
 
