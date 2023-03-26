@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd64912d-8680-415f-8521-62f6ec856627" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/ArticleTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyListsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/SearchTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/Ex5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/Ex6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/Ex7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/SearchTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/SearchTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/SearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +47,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.tests in JavaAppiumAutomation">
+  <component name="RunManager" selected="JUnit.Ex3.testCancelSearch">
     <configuration name="ChangeAppConditionTests.testChangeScreenOrientation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <extension name="coverage">
@@ -79,21 +64,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testAmountOfEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Ex3.testCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testAmountOfEmptySearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest.testChangeScreenOrientation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testChangeScreenOrientation" />
+      <option name="MAIN_CLASS_NAME" value="Ex3" />
+      <option name="METHOD_NAME" value="testCancelSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,6 +79,22 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
       <option name="METHOD_NAME" value="testCheckArticleInBackground" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTests.testCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SearchTests" />
+      <option name="METHOD_NAME" value="testCancelSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Ex3.testCancelSearch" />
+        <item itemvalue="JUnit.SearchTests.testCancelSearch" />
         <item itemvalue="JUnit.tests in JavaAppiumAutomation" />
         <item itemvalue="JUnit.ChangeAppConditionTests.testChangeScreenOrientation" />
         <item itemvalue="JUnit.FirstTest.testCheckArticleInBackground" />
-        <item itemvalue="JUnit.FirstTest.testChangeScreenOrientation" />
-        <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
       </list>
     </recent_temporary>
   </component>
