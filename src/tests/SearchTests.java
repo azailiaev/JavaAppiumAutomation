@@ -2,7 +2,6 @@ package tests;
 
 import lib.CoreTestCase;
 import lib.ui.ArticlePageObject;
-import lib.ui.MyListsPageObject;
 import lib.ui.SearchPageObject;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -92,5 +91,18 @@ public class SearchTests extends CoreTestCase
 
         SearchPageObject.clearSearchField();
         SearchPageObject.assertThereIsNoResultOfSearch();
+    }
+
+    @Test
+    public void testSearchByTitleAndDescription() {
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject.clickSkipButton();
+        SearchPageObject.initSearchInput();
+        String search_line = "Java";
+        SearchPageObject.typeSearchLine(search_line);
+        SearchPageObject.assertAtLeastThreeArticles();
+        SearchPageObject.waitForElementByTitleAndDescription("Java (programming language)", "Object-oriented programming language");
+        SearchPageObject.waitForElementByTitleAndDescription("JavaScript", "High-level programming language");
+        SearchPageObject.waitForElementByTitleAndDescription("Java (software platform)", "Set of computer software and specifications");
     }
 }
