@@ -32,6 +32,7 @@ public class SearchTests extends CoreTestCase
     @Test
     public void testAmountOfNotEmptySearch()
     {
+
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
         SearchPageObject.clickSkipButton();
         SearchPageObject.initSearchInput();
@@ -48,6 +49,7 @@ public class SearchTests extends CoreTestCase
     @Test
     public void testAmountOfEmptySearch()
     {
+        String search_line2 = "sdjkhhvfkjdfbkdfngbjkfd";
         SearchPageObject SearchPageObject = new SearchPageObject(driver);
         SearchPageObject.clickSkipButton();
         SearchPageObject.initSearchInput();
