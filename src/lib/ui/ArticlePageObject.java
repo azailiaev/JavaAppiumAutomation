@@ -1,22 +1,25 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import lib.Platform;
+import lib.ui.factories.ArticlePageObjectFactory;
 import org.openqa.selenium.WebElement;
+import lib.Platform;
 
-public class ArticlePageObject extends MainPageObject{
+abstract public class ArticlePageObject extends MainPageObject{
 
-    private static final String
-            TITLE = "xpath:/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View[1]",
-            FIRST_TITLE_IN_LIST = "xpath://*[contains(@text,'Java (programming language)')]",
-            SECOND_TITLE_IN_LIST = "xpath://*[contains(@text,'JavaScript')]",
-            THIRD_TITLE_IN_LIST = "xpath://*[contains(@text,'Java (software platform)')]",
-            FOOTER_ELEMENT = "xpath://*[@text='View article in browser']",
-            SAVE_BUTTON = "xpath://android.widget.TextView[@content-desc='Save']",
-            OPTION_ADD_TO_LIST = "xpath://*[contains(@text,'ADD TO LIST')]",
-            MY_LIST_NAME_INPUT = "id:org.wikipedia:id/text_input",
-            MY_LIST_OK_BUTTON = "xpath://*[contains(@text,'OK')]",
-            MY_SAVED_LIST = "id:org.wikipedia:id/item_title",
-            CLOSE_ARTICLE_BUTTON = "id:Navigate up";
+    protected static String
+            TITLE,
+            FIRST_TITLE_IN_LIST,
+            SECOND_TITLE_IN_LIST,
+            THIRD_TITLE_IN_LIST,
+            FOOTER_ELEMENT,
+            SAVE_BUTTON,
+            OPTION_ADD_TO_LIST,
+            MY_LIST_NAME_INPUT,
+            MY_LIST_OK_BUTTON,
+            MY_SAVED_LIST,
+            CLOSE_ARTICLE_BUTTON;
 
     public ArticlePageObject(AppiumDriver driver)
     {
@@ -51,7 +54,12 @@ public class ArticlePageObject extends MainPageObject{
     public String getArticleTitle()
     {
         WebElement title_element = waitForTitleElement();
-        return title_element.getAttribute("text");
+        if (Platform.getInstance().isAndroid()){
+            return title_element.getAttribute("text");
+        } else {
+            return title_element.getAttribute("name");
+        }
+
     }
 
     public String getArticleTitleWithoutWaiting()
@@ -80,11 +88,17 @@ public class ArticlePageObject extends MainPageObject{
 
     public void swipeToFooter()
     {
-        this.swipeUpToFindElement(
-                FOOTER_ELEMENT,
+        if (Platform.getInstance().isAndroid()){
+            this.swipeUpToFindElement(
+                    FOOTER_ELEMENT,
+                    "Cannot find the end of article",
+                    40
+            );
+        } else {
+            this.swipeUpTillElementAppear(FOOTER_ELEMENT,
                 "Cannot find the end of article",
-                20
-        );
+                40);
+        }
     }
 
     public void addArticleToMyList(String name_of_folder)
