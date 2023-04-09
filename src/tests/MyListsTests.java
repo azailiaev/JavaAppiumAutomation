@@ -47,4 +47,48 @@ public class MyListsTests extends CoreTestCase
 
         MyListsPageObject.swipeArticleToDelete(article_title);
     }
+
+    @Test
+    public void testSaveTwoArticlesThanDeleteOne()
+    {
+        SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
+        SearchPageObject.clickSkipButton();
+        SearchPageObject.initSearchInput();
+        SearchPageObject.typeSearchLine("Java");
+        SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
+
+        ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
+        ArticlePageObject.waitForTitleElement();
+        String article_title = ArticlePageObject.getArticleTitle();
+        String name_of_folder = "Learning programming";
+        ArticlePageObject.addArticleToMyList(name_of_folder);
+        if (Platform.getInstance().isAndroid()){
+            ArticlePageObject.addArticleToMyList(name_of_folder);
+        } else {
+            ArticlePageObject.addArticlesToMySaved();
+        }
+
+        SearchPageObject.initSearchInput();
+        SearchPageObject.typeSearchLine("Java");
+        SearchPageObject.clickByArticleWithSubstring("Set of computer software and specifications");
+        NavigationUI NavigationUI = NavigationUIFactory.get(driver);
+        NavigationUI.clickViewList();
+
+        ArticlePageObject.waitForTitleElement();
+        ArticlePageObject.addArticleToSavedList(name_of_folder);
+        MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
+
+        NavigationUI NavigationUI = new NavigationUI(driver);
+        NavigationUI.clickViewList();
+        if (Platform.getInstance().isAndroid()){
+            MyListsPageObject.openFolderByName(name_of_folder);
+        }
+
+        MyListsPageObject MyListsPageObject = new MyListsPageObject(driver);
+        MyListsPageObject.swipeArticleToDelete(article_title);
+        MyListsPageObject.waitForArticleToDisappearByTitle(article_title);
+        MyListsPageObject.waitForArticleToAppearByTitle("Java (software platform)");
+        MyListsPageObject.chooseArticleFromSavedList();
+        MyListsPageObject.waitForArticleToAppearByTitle("Java (software platform)");
+    }
 }
