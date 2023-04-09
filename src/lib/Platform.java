@@ -71,7 +71,7 @@ public class Platform
         capabilities.setCapability("appium:deviceName", "iPhone 14");
         capabilities.setCapability("appium:platformVersion", "16.0");
         capabilities.setCapability("appium:automationName", "XCUITest");
-        capabilities.setCapability("appium:app", "/Users/marialarina/Documents/GitHub/JavaAppiumAutomation/apks/Wikipedia.app");
+        capabilities.setCapability("appium:app", "/Users/marialarina/Documents/GitHub/JavaAppiumAutomation/apks/Wikipedia693.app");
         return capabilities;
     }
 

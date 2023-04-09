@@ -33,7 +33,7 @@ abstract public class SearchPageObject extends MainPageObject{
 
     public void clickSkipButton()
     {
-        this.waitForElementAndClick(SKIP_BUTTON, "Cannot find and click SKIP button", 5);
+        this.waitForElementAndClick(SKIP_BUTTON, "Cannot find and click SKIP button", 15);
     }
     public void initSearchInput()
     {

@@ -21,7 +21,6 @@ public class MyListsTests extends CoreTestCase
     public void testSaveArticle()
     {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
-        SearchPageObject.clickSkipButton();
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
@@ -34,14 +33,15 @@ public class MyListsTests extends CoreTestCase
             ArticlePageObject.addArticleToMyList(name_of_folder);
         } else {
             ArticlePageObject.addArticlesToMySaved();
+
         }
 
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
-        NavigationUI.clickViewList();
 
         MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
 
         if (Platform.getInstance().isAndroid()){
+            NavigationUI.clickViewList();
             MyListsPageObject.openFolderByName(name_of_folder);
         }
 
@@ -52,7 +52,6 @@ public class MyListsTests extends CoreTestCase
     public void testSaveTwoArticlesThanDeleteOne()
     {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
-        SearchPageObject.clickSkipButton();
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
@@ -78,13 +77,11 @@ public class MyListsTests extends CoreTestCase
         ArticlePageObject.addArticleToSavedList(name_of_folder);
         MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
 
-        NavigationUI NavigationUI = new NavigationUI(driver);
         NavigationUI.clickViewList();
         if (Platform.getInstance().isAndroid()){
             MyListsPageObject.openFolderByName(name_of_folder);
         }
 
-        MyListsPageObject MyListsPageObject = new MyListsPageObject(driver);
         MyListsPageObject.swipeArticleToDelete(article_title);
         MyListsPageObject.waitForArticleToDisappearByTitle(article_title);
         MyListsPageObject.waitForArticleToAppearByTitle("Java (software platform)");
