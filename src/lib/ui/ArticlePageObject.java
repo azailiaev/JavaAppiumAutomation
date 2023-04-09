@@ -6,7 +6,7 @@ import lib.ui.factories.ArticlePageObjectFactory;
 import org.openqa.selenium.WebElement;
 import lib.Platform;
 
-abstract public class ArticlePageObject extends MainPageObject{
+abstract public class ArticlePageObject extends MainPageObject {
 
     protected static String
             TITLE,
@@ -25,40 +25,33 @@ abstract public class ArticlePageObject extends MainPageObject{
             SAVED_BUTTON,
             SYNC_CROSS;
 
-    public ArticlePageObject(AppiumDriver driver)
-    {
+    public ArticlePageObject(AppiumDriver driver) {
         super(driver);
     }
 
-    public WebElement waitForTitleElement()
-    {
+    public WebElement waitForTitleElement() {
         return this.waitForElementPresent(TITLE, "Cannot find article title on page", 15);
     }
 
-    public WebElement doNotWaitForTitleElement()
-    {
+    public WebElement doNotWaitForTitleElement() {
         return this.waitForElementPresent(TITLE, "Cannot find article title on page", 0);
     }
 
-    public WebElement waitForFirstTitleElementInList()
-    {
+    public WebElement waitForFirstTitleElementInList() {
         return this.waitForElementPresent(FIRST_TITLE_IN_LIST, "Cannot find article title in list " + FIRST_TITLE_IN_LIST, 15);
     }
 
-    public WebElement waitForSecondTitleElementInList()
-    {
+    public WebElement waitForSecondTitleElementInList() {
         return this.waitForElementPresent(SECOND_TITLE_IN_LIST, "Cannot find article title in list " + SECOND_TITLE_IN_LIST, 15);
     }
 
-    public WebElement waitForThirdTitleElementInList()
-    {
+    public WebElement waitForThirdTitleElementInList() {
         return this.waitForElementPresent(THIRD_TITLE_IN_LIST, "Cannot find article title in list " + THIRD_TITLE_IN_LIST, 15);
     }
 
-    public String getArticleTitle()
-    {
+    public String getArticleTitle() {
         WebElement title_element = waitForTitleElement();
-        if (Platform.getInstance().isAndroid()){
+        if (Platform.getInstance().isAndroid()) {
             return title_element.getAttribute("text");
         } else {
             return title_element.getAttribute("name");
@@ -66,33 +59,28 @@ abstract public class ArticlePageObject extends MainPageObject{
 
     }
 
-    public String getArticleTitleWithoutWaiting()
-    {
+    public String getArticleTitleWithoutWaiting() {
         WebElement title_element = doNotWaitForTitleElement();
         return title_element.getAttribute("text");
     }
 
-    public String getFirstArticleTitleInList()
-    {
+    public String getFirstArticleTitleInList() {
         WebElement title_first_element_in_list = waitForFirstTitleElementInList();
         return title_first_element_in_list.getAttribute("text");
     }
 
-    public String getSecondArticleTitleInList()
-    {
+    public String getSecondArticleTitleInList() {
         WebElement title_second_element_in_list = waitForSecondTitleElementInList();
         return title_second_element_in_list.getAttribute("text");
     }
 
-    public String getThirdArticleTitleInList()
-    {
+    public String getThirdArticleTitleInList() {
         WebElement title_third_element_in_list = waitForThirdTitleElementInList();
         return title_third_element_in_list.getAttribute("text");
     }
 
-    public void swipeToFooter()
-    {
-        if (Platform.getInstance().isAndroid()){
+    public void swipeToFooter() {
+        if (Platform.getInstance().isAndroid()) {
             this.swipeUpToFindElement(
                     FOOTER_ELEMENT,
                     "Cannot find the end of article",
@@ -100,13 +88,12 @@ abstract public class ArticlePageObject extends MainPageObject{
             );
         } else {
             this.swipeUpTillElementAppear(FOOTER_ELEMENT,
-                "Cannot find the end of article",
-                40);
+                    "Cannot find the end of article",
+                    40);
         }
     }
 
-    public void addArticleToMyList(String name_of_folder)
-    {
+    public void addArticleToMyList(String name_of_folder) {
         this.waitForElementAndClick(
                 SAVE_BUTTON,
                 "Cannot find Save",
@@ -130,8 +117,7 @@ abstract public class ArticlePageObject extends MainPageObject{
         );
     }
 
-    public void addArticleToSavedList(String name_of_folder)
-    {
+    public void addArticleToSavedList(String name_of_folder) {
         this.waitForElementAndClick(
                 SAVE_BUTTON,
                 "Cannot find Save",
@@ -149,8 +135,7 @@ abstract public class ArticlePageObject extends MainPageObject{
         );
     }
 
-    public void closeArticle()
-    {
+    public void closeArticle() {
         this.waitForElementAndClick(
                 CLOSE_ARTICLE_BUTTON,
                 "Cannot close article",
@@ -158,11 +143,14 @@ abstract public class ArticlePageObject extends MainPageObject{
         );
     }
 
-    public void addArticlesToMySaved(){
+    public void addArticlesToMySaved() {
         this.waitForElementAndClick(OPTION_ADD_TO_LIST, "Cannot find option to add article to reading list", 10);
         this.waitForElementAndClick(CLOSE_ARTICLE_BUTTON, "Cannot close article", 10);
         this.waitForElementAndClick(CANCEL_BUTTON, "Cannot find Cancel button", 10);
         this.waitForElementAndClick(SAVED_BUTTON, "Cannot find Saved button", 10);
-        this.waitForElementAndClick(SYNC_CROSS, "Cannot find Saved button", 10);
+    }
+
+    public void closeSyncForm() {
+        this.waitForElementAndClick(SYNC_CROSS, "Cannot find cross on SYNC form", 10);
     }
 }

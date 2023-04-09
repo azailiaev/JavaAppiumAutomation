@@ -13,6 +13,7 @@ public class iOSSearchPageObject extends SearchPageObject
         SEARCH_RESULT_BY_SUBSTRING_TPL = "id:{SUBSTRING}";
         SEARCH_RESULT_ELEMENT = "xpath://XCUIElementTypeLink";
         SEARCH_EMPTY_RESULT_ELEMENT = "xpath://XCUIElementTypeStaticText[@name= 'No results found']";
+        SEARCH_ICON = "id:Search";
     }
 
     public iOSSearchPageObject(AppiumDriver driver)

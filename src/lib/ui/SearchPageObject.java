@@ -12,7 +12,8 @@ abstract public class SearchPageObject extends MainPageObject{
             SEARCH_RESULT_BY_SUBSTRING_TPL,
             SEARCH_RESULT_BY_TITLE_AND_DESCRIPTION_SUBSTRINGS_TPL,
             SEARCH_RESULT_ELEMENT,
-            SEARCH_EMPTY_RESULT_ELEMENT;
+            SEARCH_EMPTY_RESULT_ELEMENT,
+            SEARCH_ICON;
 
     public SearchPageObject(AppiumDriver driver)
     {
@@ -39,6 +40,11 @@ abstract public class SearchPageObject extends MainPageObject{
     {
         this.waitForElementPresent(SEARCH_INIT_ELEMENT, "Cannot find search input after clicking search init element", 5);
         this.waitForElementAndClick(SEARCH_INIT_ELEMENT, "Cannot find and click search init element", 5);
+    }
+
+    public void searchIcon()
+    {
+        this.waitForElementAndClick(SEARCH_ICON, "Cannot find Search icon", 10);
     }
 
     public void waitForCancelButtonToAppear()

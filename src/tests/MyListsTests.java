@@ -33,7 +33,7 @@ public class MyListsTests extends CoreTestCase
             ArticlePageObject.addArticleToMyList(name_of_folder);
         } else {
             ArticlePageObject.addArticlesToMySaved();
-
+            ArticlePageObject.closeSyncForm();
         }
 
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
@@ -59,33 +59,35 @@ public class MyListsTests extends CoreTestCase
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
         String article_title = ArticlePageObject.getArticleTitle();
-        String name_of_folder = "Learning programming";
-        ArticlePageObject.addArticleToMyList(name_of_folder);
+
+        if (Platform.getInstance().isAndroid()){
+            ArticlePageObject.addArticleToMyList(name_of_folder);
+        } else {
+            ArticlePageObject.addArticlesToMySaved();
+            ArticlePageObject.closeSyncForm();
+        }
+
+        SearchPageObject.searchIcon();
+        SearchPageObject.typeSearchLine("Java");
+        SearchPageObject.clickByArticleWithSubstring("Set of computer software and specifications");
+
         if (Platform.getInstance().isAndroid()){
             ArticlePageObject.addArticleToMyList(name_of_folder);
         } else {
             ArticlePageObject.addArticlesToMySaved();
         }
 
-        SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine("Java");
-        SearchPageObject.clickByArticleWithSubstring("Set of computer software and specifications");
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
-        NavigationUI.clickViewList();
 
-        ArticlePageObject.waitForTitleElement();
-        ArticlePageObject.addArticleToSavedList(name_of_folder);
         MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
 
-        NavigationUI.clickViewList();
         if (Platform.getInstance().isAndroid()){
+            NavigationUI.clickViewList();
             MyListsPageObject.openFolderByName(name_of_folder);
         }
 
         MyListsPageObject.swipeArticleToDelete(article_title);
         MyListsPageObject.waitForArticleToDisappearByTitle(article_title);
-        MyListsPageObject.waitForArticleToAppearByTitle("Java (software platform)");
-        MyListsPageObject.chooseArticleFromSavedList();
         MyListsPageObject.waitForArticleToAppearByTitle("Java (software platform)");
     }
 }
