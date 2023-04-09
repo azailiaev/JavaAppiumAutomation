@@ -5,32 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd64912d-8680-415f-8521-62f6ec856627" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidArticlePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidSearchPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/ArticlePageObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/SearchPageObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/iOSArticlePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/iOSSearchPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidMyListsPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidNavigationUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/MyListsPageObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/NavigationUIFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/iOSMyListsPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/iOSNavigationUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/CoreTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/CoreTestCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/iOSTestCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/SearchPageObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/ArticleTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/ChangeAppConditionTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/MyListsTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/SearchTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/iOS/GetStartedTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Platform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/Platform.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/Platform.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/ArticlePageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/ArticlePageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/MainPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/MainPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/WelcomePageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/lib/ui/WelcomePageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/GetStartedTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/tests/GetStartedTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ArticleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ArticleTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/GetStartedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/GetStartedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/MyListsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/MyListsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/SearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
