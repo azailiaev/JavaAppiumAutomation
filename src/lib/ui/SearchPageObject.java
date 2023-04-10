@@ -1,6 +1,7 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import lib.Platform;
 
 abstract public class SearchPageObject extends MainPageObject{
 
@@ -13,7 +14,8 @@ abstract public class SearchPageObject extends MainPageObject{
             SEARCH_RESULT_BY_TITLE_AND_DESCRIPTION_SUBSTRINGS_TPL,
             SEARCH_RESULT_ELEMENT,
             SEARCH_EMPTY_RESULT_ELEMENT,
-            SEARCH_ICON;
+            SEARCH_ICON,
+            RECENTLY_SEARCHED;
 
     public SearchPageObject(AppiumDriver driver)
     {
@@ -64,7 +66,11 @@ abstract public class SearchPageObject extends MainPageObject{
 
     public void clearSearchField()
     {
-        this.waitForElementAndClear(SEARCH_INPUT, "Cannot clear search field", 5);
+        if (Platform.getInstance().isAndroid()){
+            this.waitForElementAndClear(SEARCH_INPUT, "Cannot clear search field", 5);
+        } else {
+            this.waitForElementAndClear(SEARCH_INIT_ELEMENT, "Cannot clear search field", 5);
+        }
     }
 
     public void typeSearchLine(String serch_line)

@@ -33,6 +33,10 @@ abstract public class ArticlePageObject extends MainPageObject {
         return this.waitForElementPresent(TITLE, "Cannot find article title on page", 15);
     }
 
+    public void titleElementNotFound() {
+        this.waitForElementNotPresent(TITLE, "Can find article title on page", 0);
+    }
+
     public WebElement doNotWaitForTitleElement() {
         return this.waitForElementPresent(TITLE, "Cannot find article title on page", 0);
     }
@@ -66,17 +70,30 @@ abstract public class ArticlePageObject extends MainPageObject {
 
     public String getFirstArticleTitleInList() {
         WebElement title_first_element_in_list = waitForFirstTitleElementInList();
-        return title_first_element_in_list.getAttribute("text");
+        if (Platform.getInstance().isAndroid()) {
+            return title_first_element_in_list.getAttribute("text");
+        } else {
+            return title_first_element_in_list.getAttribute("name");
+        }
+
     }
 
     public String getSecondArticleTitleInList() {
         WebElement title_second_element_in_list = waitForSecondTitleElementInList();
-        return title_second_element_in_list.getAttribute("text");
+        if (Platform.getInstance().isAndroid()) {
+            return title_second_element_in_list.getAttribute("text");
+        } else {
+            return title_second_element_in_list.getAttribute("name");
+        }
     }
 
     public String getThirdArticleTitleInList() {
         WebElement title_third_element_in_list = waitForThirdTitleElementInList();
-        return title_third_element_in_list.getAttribute("text");
+        if (Platform.getInstance().isAndroid()) {
+            return title_third_element_in_list.getAttribute("text");
+        } else {
+            return title_third_element_in_list.getAttribute("name");
+        }
     }
 
     public void swipeToFooter() {

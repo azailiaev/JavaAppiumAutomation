@@ -1,7 +1,9 @@
 package tests;
 
 import lib.CoreTestCase;
+import lib.Platform;
 import lib.ui.ArticlePageObject;
+import lib.ui.MainPageObject;
 import lib.ui.SearchPageObject;
 import lib.ui.factories.ArticlePageObjectFactory;
 import lib.ui.factories.SearchPageObjectFactory;
@@ -65,7 +67,6 @@ public class SearchTests extends CoreTestCase
     public void testFindArticlesThenClearSearchField()
     {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
-        SearchPageObject.clickSkipButton();
         SearchPageObject.initSearchInput();
         String search_line = "Java";
         SearchPageObject.typeSearchLine(search_line);
@@ -94,7 +95,11 @@ public class SearchTests extends CoreTestCase
         );
 
         SearchPageObject.clearSearchField();
-        SearchPageObject.assertThereIsNoResultOfSearch();
+        if (Platform.getInstance().isAndroid()) {
+            SearchPageObject.assertThereIsNoResultOfSearch();
+        } else {
+            ArticlePageObject.titleElementNotFound();
+        }
     }
 
     @Test

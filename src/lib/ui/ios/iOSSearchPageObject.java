@@ -11,9 +11,10 @@ public class iOSSearchPageObject extends SearchPageObject
         SEARCH_INPUT = "xpath://XCUIElementTypeSearchField[@value = 'Search Wikipedia']";
         SEARCH_CANCEL_BUTTON = "id:Close";
         SEARCH_RESULT_BY_SUBSTRING_TPL = "id:{SUBSTRING}";
-        SEARCH_RESULT_ELEMENT = "xpath://XCUIElementTypeLink";
+        SEARCH_RESULT_ELEMENT = "xpath://XCUIElementTypeStaticText";
         SEARCH_EMPTY_RESULT_ELEMENT = "xpath://XCUIElementTypeStaticText[@name= 'No results found']";
         SEARCH_ICON = "id:Search";
+        RECENTLY_SEARCHED = "id:Recently searched";
     }
 
     public iOSSearchPageObject(AppiumDriver driver)
