@@ -16,7 +16,7 @@ public class SearchTests extends CoreTestCase
     public void testSendKeys()
     {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
-        SearchPageObject.clickSkipButton();
+        ///SearchPageObject.clickSkipButton();
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         SearchPageObject.waitForSearchResult("Object-oriented programming language");
@@ -26,7 +26,7 @@ public class SearchTests extends CoreTestCase
     public void testCancelSearch()
     {
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
-        SearchPageObject.clickSkipButton();
+        ///SearchPageObject.clickSkipButton();
         SearchPageObject.initSearchInput();
         SearchPageObject.waitForCancelButtonToAppear();
         SearchPageObject.clickCancelSearch();

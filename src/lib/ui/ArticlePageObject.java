@@ -5,6 +5,7 @@ import lib.Platform;
 import lib.ui.factories.ArticlePageObjectFactory;
 import org.openqa.selenium.WebElement;
 import lib.Platform;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 abstract public class ArticlePageObject extends MainPageObject {
 
@@ -16,6 +17,7 @@ abstract public class ArticlePageObject extends MainPageObject {
             FOOTER_ELEMENT,
             SAVE_BUTTON,
             OPTION_ADD_TO_LIST,
+            OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
             MY_LIST_NAME_INPUT,
             MY_LIST_OK_BUTTON,
             MY_SAVED_LIST,
@@ -25,7 +27,7 @@ abstract public class ArticlePageObject extends MainPageObject {
             SAVED_BUTTON,
             SYNC_CROSS;
 
-    public ArticlePageObject(AppiumDriver driver) {
+    public ArticlePageObject(RemoteWebDriver driver) {
         super(driver);
     }
 
@@ -57,8 +59,10 @@ abstract public class ArticlePageObject extends MainPageObject {
         WebElement title_element = waitForTitleElement();
         if (Platform.getInstance().isAndroid()) {
             return title_element.getAttribute("text");
-        } else {
+        } else if (Platform.getInstance().isIOS()){
             return title_element.getAttribute("name");
+        } else {
+            return title_element.getText();
         }
 
     }
@@ -103,10 +107,16 @@ abstract public class ArticlePageObject extends MainPageObject {
                     "Cannot find the end of article",
                     40
             );
-        } else {
+        } else if (Platform.getInstance().isIOS()){
             this.swipeUpTillElementAppear(FOOTER_ELEMENT,
                     "Cannot find the end of article",
                     40);
+        } else {
+            this.scrollWebPageTillElementNotVisible(
+                    FOOTER_ELEMENT,
+                    "Cannot find the end of article",
+                    40
+            );
         }
     }
 
@@ -161,6 +171,9 @@ abstract public class ArticlePageObject extends MainPageObject {
     }
 
     public void addArticlesToMySaved() {
+        if (Platform.getInstance().isMW()){
+            this.removeArticleFromSavedIfItAdded();
+        }
         this.waitForElementAndClick(OPTION_ADD_TO_LIST, "Cannot find option to add article to reading list", 10);
         this.waitForElementAndClick(CLOSE_ARTICLE_BUTTON, "Cannot close article", 10);
         this.waitForElementAndClick(CANCEL_BUTTON, "Cannot find Cancel button", 10);
@@ -168,6 +181,24 @@ abstract public class ArticlePageObject extends MainPageObject {
     }
 
     public void closeSyncForm() {
-        this.waitForElementAndClick(SYNC_CROSS, "Cannot find cross on SYNC form", 10);
+        if (Platform.getInstance().isIOS() || Platform.getInstance().isAndroid()){
+            this.waitForElementAndClick(SYNC_CROSS, "Cannot find cross on SYNC form", 10);
+        } else {
+            System.out.println("Method closeSyncForm() do nothing for platform " + Platform.getInstance().getPlatformVar());
+        }
+    }
+
+    public void removeArticleFromSavedIfItAdded(){
+        if (this.isElementPresent(OPTIONS_REMOVE_FROM_MY_LIST_BUTTON)){
+            this.waitForElementAndClick(
+                    OPTIONS_REMOVE_FROM_MY_LIST_BUTTON,
+                    "Cannot click button to remove article from saved",
+                    1
+            );
+            this.waitForElementPresent(
+                    OPTION_ADD_TO_LIST,
+                    "Cannot find button to add article to saved after removing"
+            );
+        }
     }
 }
