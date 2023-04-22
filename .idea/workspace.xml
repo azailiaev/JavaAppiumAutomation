@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="bd64912d-8680-415f-8521-62f6ec856627" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/AuthtorizationPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/AuthtorizationPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/mobile_web/MWArcticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/mobile_web/MWArcticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/mobile_web/MWMyListsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/mobile_web/MWMyListsPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/mobile_web/MWNavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/mobile_web/MWNavigationUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/mobile_web/MWSearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/mobile_web/MWSearchPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/MyListsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/MyListsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/zaily/OneDrive/Документы/GitHub/JavaAppiumAutomation&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/zaily/OneDrive/Рабочий стол/JavaAppium/JavaAppium",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="lib" />
@@ -54,11 +63,11 @@
     <configuration name="Platform" type="JUnit" factoryName="JUnit">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyListsTests" />
+      <option name="METHOD_NAME" value="testSaveTwoArticlesThanDeleteOne" />
+      <option name="TEST_OBJECT" value="method" />
       <envs>
-        <env name="PLATFORM" value="android" />
+        <env name="PLATFORM" value="mobile_web" />
       </envs>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,19 +97,34 @@
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/MyListsTests.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="262" />
+          <url>file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="325" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="326" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="327" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tests/MyListsTests.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="263" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/MyListsTests.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="264" />
+          <line>133</line>
+          <option name="timeStamp" value="329" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
