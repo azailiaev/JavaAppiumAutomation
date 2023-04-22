@@ -11,7 +11,7 @@ public class MWArcticlePageObject extends ArticlePageObject
         SECOND_TITLE_IN_LIST = "id:JavaScript";
         THIRD_TITLE_IN_LIST = "id:Java (software platform)";
         FOOTER_ELEMENT = "css:footer";
-        OPTION_ADD_TO_LIST = "css:#page-actions li#ca-watch.mw-ui-icon-mf-watch button";
+        OPTION_ADD_TO_LIST = "xpath://*[@id='ca-watch']";
         OPTIONS_REMOVE_FROM_MY_LIST_BUTTON = "css:#page-actions li#ca-watch.mw-ui-icon-mf-watched watched button";
         CLOSE_ARTICLE_BUTTON = "id:Back";
         CANCEL_BUTTON = "xpath://XCUIElementTypeStaticText[@name='Cancel']";

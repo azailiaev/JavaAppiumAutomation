@@ -63,11 +63,10 @@ abstract public class MyListsPageObject extends MainPageObject {
             String remove_locator = getRemoveButtonByTitle(article_title);
             this.waitForElementAndClick(
                     remove_locator,
-                    "Cannotclick button to remove article from saved",
+                    "Cannot click button to remove article from saved",
                     10
                     );
         }
-
 
         if (Platform.getInstance().isIOS()){
             this.clickElementToTheRightUpperCorner(article_xpath, "Cannot find saved articles");
@@ -89,6 +88,9 @@ abstract public class MyListsPageObject extends MainPageObject {
         );
     }
 
+    public void clickStarToDelete (){
+        this.waitForElementAndClick(REMOVE_FROM_SAVED_BUTTON, "Cannot click star", 10);
+    }
 
 }
 

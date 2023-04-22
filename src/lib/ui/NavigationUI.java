@@ -22,12 +22,13 @@ abstract public class NavigationUI extends MainPageObject{
                     "Cannot find 'VIEW LIST'",
                     5
             );
+        } else {
+            this.waitForElementAndClick(
+                    VIEW_LIST,
+                    "Cannot find 'VIEW LIST'",
+                    5
+            );
         }
-        this.waitForElementAndClick(
-                VIEW_LIST,
-                "Cannot find 'VIEW LIST'",
-                5
-        );
     }
 
     public void openNavigation(){

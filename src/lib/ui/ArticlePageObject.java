@@ -173,11 +173,13 @@ abstract public class ArticlePageObject extends MainPageObject {
     public void addArticlesToMySaved() {
         if (Platform.getInstance().isMW()){
             this.removeArticleFromSavedIfItAdded();
+            this.waitForElementAndClick(OPTION_ADD_TO_LIST, "Cannot find option to add article to reading list", 10);
+        } else {
+            this.waitForElementAndClick(OPTION_ADD_TO_LIST, "Cannot find option to add article to reading list", 10);
+            this.waitForElementAndClick(CLOSE_ARTICLE_BUTTON, "Cannot close article", 10);
+            this.waitForElementAndClick(CANCEL_BUTTON, "Cannot find Cancel button", 10);
+            this.waitForElementAndClick(SAVED_BUTTON, "Cannot find Saved button", 10);
         }
-        this.waitForElementAndClick(OPTION_ADD_TO_LIST, "Cannot find option to add article to reading list", 10);
-        this.waitForElementAndClick(CLOSE_ARTICLE_BUTTON, "Cannot close article", 10);
-        this.waitForElementAndClick(CANCEL_BUTTON, "Cannot find Cancel button", 10);
-        this.waitForElementAndClick(SAVED_BUTTON, "Cannot find Saved button", 10);
     }
 
     public void closeSyncForm() {
